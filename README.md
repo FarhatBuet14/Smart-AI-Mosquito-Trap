@@ -47,9 +47,10 @@ mosquito-ai-trap/
 │
 ├── server_pipeline/
 │   ├── watcher.py                    # Firestore listener and processor
-│   ├── process_pipeline.py          # Main orchestration of all steps
+│   ├── localize_image.py          # Localize the trap image to extract single mosquitoes
+│   ├── speciesClassifier.py          # Classify the species of the single mosquitoes
 │   ├── models/
-│   │   ├── faster_rcnn.pth          # Pretrained mosquito detector
+│   │   ├── faster_rcnn.pth          # Pretrained mosquito localizer
 │   │   └── nasnet_mobile.pth        # Pretrained species classifier
 │
 ├── utils/
@@ -159,4 +160,3 @@ MIT License — free to use, modify, and distribute.
 ## 🧳 Acknowledgments
 
 This project was supported by research on AI-based mosquito classification for vector surveillance and disease prevention. Special thanks to the SCoRE Lab at University of South Florida and the global entomology and computer vision communities.
-
