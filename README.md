@@ -14,6 +14,9 @@ A server-side Python script continuously monitors Firestore for new uploads, and
 
 ## 🔄 End-to-End Pipeline
 
+![Pipeline Diagram](https://github.com/FarhatBuet14/Smart-AI-Mosquito-Trap/raw/main/Pipeline.png)
+
+
 ### Edge Device (Raspberry Pi)
 
 - Triggers fan + light to lure mosquitoes
